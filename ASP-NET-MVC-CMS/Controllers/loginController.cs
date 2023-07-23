@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿,using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Security.Claims;
@@ -19,7 +19,7 @@ namespace ASP_NET_MVC_CMS.Controllers
         {
             if (Email == "admin@admin.com" && Sifre == "123")
             {
-                //Giriş yapan kullanıcının tarayıcıda gruplandırarak tutmamızı sağlayan sınıf yapısı Claim dir
+                //Giriş yapan kullanıcının tarayıcıda gruplandırarak tutmamızı sağlayan sınıf yapısı Claim dir,
 
                 var claims = new List<Claim>
                 {
@@ -39,6 +39,7 @@ namespace ASP_NET_MVC_CMS.Controllers
                 ViewBag.Message = "Email adresi veya şifre yanlış";
 
             }
+
 
             return View();
         }
